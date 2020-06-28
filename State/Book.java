@@ -10,7 +10,7 @@ public class Book{
     protected String Author;
 
     public Book(final String title, int year, String author) {
-        this.state = new InventoryState(); // o state comeca a Inventory
+        this.state = new InventoryState(); // state starts at Inventory
         this.title = title;
         this.ISBN = ++publicISBN;
         this.year = year;

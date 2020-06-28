@@ -1,6 +1,6 @@
 public class Employee implements CompanyInterface{
     //Employee is the "main" class
-    //an employee has a name and two methods
+    //an employee has a name and two "main" methods
     //an employee can start working or stop
     String name;
 

@@ -1,8 +1,11 @@
 public class Main {
 	public static void main(String[] args) {
-		FactInterface modernFact = new ModernFactory();
-		FactInterface simpleFact = new SimpleFactory();
-		FactInterface victorianFact = new VictorianFactory();
+
+		Factory fact = new Factory();
+
+		FactInterface modernFact = fact.getFactory("modern");
+		FactInterface simpleFact = fact.getFactory("simple");
+		FactInterface victorianFact = fact.getFactory("victorian");
 		
 		Chair mchair = modernFact.createChair();
 		Bed mbed = modernFact.createBed();

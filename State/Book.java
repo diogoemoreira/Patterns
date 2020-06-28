@@ -1,4 +1,7 @@
 public class Book{
+    //ok the book is the class that changes state
+    //in summary this class can be in one state and depending on its state can jump to another state in specific methods
+    //to see to which state it can jump to see state classes
     State state;
     private static int publicISBN=0;
     protected String title;
@@ -15,12 +18,15 @@ public class Book{
     }
 
     public void setState(final State state) {
+        //sets the state of the book
         this.state=state;
     }
     public State getState(){
+        //gets the current state of the book
         return this.state;
     }
 
+    //this methods call the state the book is in and can either jump to another state or print a message saying it cant use the method
     public void register(){
         this.state.register(this);
     }
@@ -36,7 +42,7 @@ public class Book{
     public void giveBack(){
         this.state.giveBack(this);
     }
-
+    //
     public String getTitle() {
         return title;
     }

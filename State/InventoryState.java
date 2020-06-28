@@ -1,5 +1,5 @@
 public class InventoryState implements State{
-
+    //this state only changes state in one method
     @Override
     public void register(Book b) {
         b.setState(new AvailableState());

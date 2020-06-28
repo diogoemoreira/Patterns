@@ -1,4 +1,5 @@
 public class AvailableState implements State{
+    //this state only changes to another state in 2 methods
     @Override
     public void register(Book b) {
         System.out.println("Operation not available");

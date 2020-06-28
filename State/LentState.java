@@ -1,4 +1,5 @@
 public class LentState implements State {
+    //this state only changes state in one method
     @Override
     public void register(Book b) {
         System.out.println("Operation not available");

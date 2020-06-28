@@ -1,4 +1,5 @@
 public class ReservedState implements State{
+    //this state only chnages state in one method
     @Override
     public void register(Book b) {
         System.out.println("Operation not available");
